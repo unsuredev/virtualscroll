@@ -1,8 +1,25 @@
+<h1>Brits Performance Hall of Fame</h1>
 <div class="container">
-  <h2>Brits Performing artists</h2>
+  <h2>2019 Artists</h2>
   <cdk-virtual-scroll-viewport itemSize="100" class="example-viewport">
     <div *cdkVirtualFor="let artist of artists" class="list">
-      <h2>{{ artist.name }}</h2>
+      <h2>{{ artist.id }}. {{ artist.name }}</h2>
+    </div>
+  </cdk-virtual-scroll-viewport>
+</div>
+<div class="container">
+  <h2>2018 Artists</h2>
+  <cdk-virtual-scroll-viewport itemSize="100" class="example-viewport">
+    <div *cdkVirtualFor="let artist of artists" class="list">
+      <h2>{{ artist.phone }}. {{ artist.name }}</h2>
+    </div>
+  </cdk-virtual-scroll-viewport>
+</div>
+<div class="container">
+  <h2>2017 Artists</h2>
+  <cdk-virtual-scroll-viewport itemSize="100" class="example-viewport">
+    <div *cdkVirtualFor="let artist of artists" class="list">
+      <h2>{{ artist.website }}. {{ artist.name }}</h2>
     </div>
   </cdk-virtual-scroll-viewport>
 </div>
